@@ -15,7 +15,7 @@
     "swap": "file",
     "disk_layouts": [
       {
-        "device": "/dev/sda",
+        "device": "/dev/nvme0n1",
         "partitions": [
           {
             "mountpoint": "/",
@@ -39,59 +39,60 @@
       }
     ],
     "additional_packages": [
-      "i3-wm",
-      "xorg-server",
-      "xorg-xinit",
-      "networkmanager",
-      "pipewire",
+      "i3-wm",           // i3 window manager
+      "xorg-server",     // Xorg server
+      "xorg-xinit",      // Xorg initialization utility
+      "networkmanager",  // Network Manager
+      "pipewire",        // PipeWire for audio
       "pipewire-pulse",  // PipeWire PulseAudio compatibility
       "pipewire-alsa",   // PipeWire ALSA compatibility
-      "wireplumber",
-      "nano",
-      "bluez",
-      "blueman",
-      "alacritty",
-      "polybar",
-      "picom",
-      "rofi",
-      "dunst",
-      "feh",
-      "mpd",
-      "vlc",
-      "firefox",
-      "thunar",
-      "pavucontrol",
-      "cmst",
-      "xarchiver",
-      "linux-lts",
-      "rsync",
-      "wine",
-      "openssh",
-      "base-devel",
-      "cmake",
-      "extra-cmake-modules",
-      "yay",
-      "docker",
-      "git",
-      "htop",
-      "neofetch",
-      "gnome-keyring",
-      "flameshot",
-      "lxappearance",
-      "noto-fonts",
-      "ttf-dejavu",
-      "ttf-liberation",
-      "ttf-roboto",
-      "ttf-ubuntu-font-family",
-      "arc-gtk-theme",
-      "papirus-icon-theme"
+      "wireplumber",     // PipeWire session manager
+      "nano",            // Nano text editor
+      "bluez",           // Bluetooth protocol stack
+      "blueman",         // Bluetooth manager
+      "alacritty",       // Alacritty terminal emulator
+      "polybar",         // Polybar status bar
+      "picom",           // Picom compositor
+      "rofi",            // Rofi application launcher
+      "dunst",           // Dunst notification daemon
+      "feh",             // Feh image viewer and background setter
+      "mpd",             // Music Player Daemon
+      "vlc",             // VLC media player
+      "firefox",         // Firefox web browser
+      "thunar",          // Thunar file manager
+      "pavucontrol",     // PulseAudio volume control
+      "cmst",            // Connman System Tray
+      "xarchiver",       // Archive manager
+      "linux-lts",       // Long-term support Linux kernel
+      "rsync",           // Rsync utility for backups
+      "wine",            // Wine for running Windows applications
+      "openssh",         // OpenSSH for remote access
+      "base-devel",      // Development tools
+      "cmake",           // CMake build system
+      "extra-cmake-modules",  // Extra CMake modules
+      "yay",             // AUR helper
+      "docker",          // Docker containerization platform
+      "git",             // Git version control system
+      "htop",            // Interactive process viewer
+      "neofetch",        // System information tool
+      "gnome-keyring",   // GNOME Keyring
+      "flameshot",       // Screenshot tool
+      "lxappearance",    // GTK+ theme switcher
+      "noto-fonts",      // Noto fonts
+      "ttf-dejavu",      // DejaVu fonts
+      "ttf-liberation",  // Liberation fonts
+      "ttf-roboto",      // Roboto fonts
+      "ttf-ubuntu-font-family",  // Ubuntu fonts
+      "arc-gtk-theme",   // Arc GTK theme
+      "papirus-icon-theme"  // Papirus icon theme
     ],
     "locale_config": {
       "locale": "en_US.UTF-8",
-      "keymap": "de"
+      "keymap": "us"
     },
     "timezone": "Europe/Berlin",
     "audio_config": "pipewire",
     "hostname": "archlinux"
   }
 }
+
