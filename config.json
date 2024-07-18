@@ -1,0 +1,97 @@
+{
+  "profile": {
+    "name": "custom-arch-install",
+    "description": "Custom Arch Linux installation with specific packages and partitioning scheme",
+    "hostname": "archlinux",
+    "users": [
+      {
+        "username": "yourusername",
+        "password": "yourpassword",
+        "sudo": true
+      }
+    ],
+    "bootloader": "grub-install",
+    "mirror-region": "World",
+    "swap": "file",
+    "disk_layouts": [
+      {
+        "device": "/dev/sda",
+        "partitions": [
+          {
+            "mountpoint": "/",
+            "size": "35G",
+            "type": "ext4"
+          },
+          {
+            "mountpoint": "/home",
+            "size": "remaining",
+            "type": "ext4"
+          }
+        ]
+      }
+    ],
+    "additional_repositories": [
+      {
+        "name": "multilib",
+        "servers": [
+          "https://archlinux.org/multilib/$repo/os/$arch"
+        ]
+      }
+    ],
+    "additional_packages": [
+      "i3-wm",
+      "xorg-server",
+      "xorg-xinit",
+      "networkmanager",
+      "pipewire",
+      "pipewire-pulse",  // PipeWire PulseAudio compatibility
+      "pipewire-alsa",   // PipeWire ALSA compatibility
+      "wireplumber",
+      "nano",
+      "bluez",
+      "blueman",
+      "alacritty",
+      "polybar",
+      "picom",
+      "rofi",
+      "dunst",
+      "feh",
+      "mpd",
+      "vlc",
+      "firefox",
+      "thunar",
+      "pavucontrol",
+      "cmst",
+      "xarchiver",
+      "linux-lts",
+      "rsync",
+      "wine",
+      "openssh",
+      "base-devel",
+      "cmake",
+      "extra-cmake-modules",
+      "yay",
+      "docker",
+      "git",
+      "htop",
+      "neofetch",
+      "gnome-keyring",
+      "flameshot",
+      "lxappearance",
+      "noto-fonts",
+      "ttf-dejavu",
+      "ttf-liberation",
+      "ttf-roboto",
+      "ttf-ubuntu-font-family",
+      "arc-gtk-theme",
+      "papirus-icon-theme"
+    ],
+    "locale_config": {
+      "locale": "en_US.UTF-8",
+      "keymap": "de"
+    },
+    "timezone": "Europe/Berlin",
+    "audio_config": "pipewire",
+    "hostname": "archlinux"
+  }
+}
